@@ -6,7 +6,7 @@ system:
 
 # currently still manually calculated
 control:
-  u : "-2 * lamda * torch.sin(x1) - x3 * (1 + 2 * l_) - x2 * (1 + l_**2) - k_ * (2 / 3.14) * torch.arctan(p_ * (x3 + 2 * l_ * x2 + l_**2 * x1))"
+  u : "-2 * lamda * torch.sin(x1) - x3 * (1 + 2 * lamda) - x2 * (1 + lamda**2) - k_ * (2 / 3.14) * torch.arctan(p_ * (x3 + 2 * lamda * x2 + lamda**2 * x1))"
 
 # for stabilizing, xn = 0
 desired:
@@ -17,12 +17,11 @@ desired:
 # initial value
 initial:
   x1 : 1.2
-  x2 : -0.5
-  x3 : 2
+  x2 : 0.0
+  x3 : -1.0
 
 # parameters
 params:
   - lamda
   - k_
-  - l_
   - p_
