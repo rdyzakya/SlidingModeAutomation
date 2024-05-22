@@ -8,8 +8,8 @@ Sliding Mode Automation in Non Linear System Controlling
 
 ## Example on Pendulum
 
-[Pendulum](video/pendulum.mp4)
+[!Pendulum](video/pendulum.mp4)
 
 ## Example on Robotic
 
-[Pendulum](video/robotic.mp4)
+[!Robotic](video/robotic.mp4)

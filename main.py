@@ -130,7 +130,7 @@ if __name__ == "__main__":
         for el in desired.values()
     ]
 
-    parameter_values = torch.ones(len(params), requires_grad=True).float()
+    parameter_values = torch.randn(len(params), requires_grad=True).float()
 
     history = []
 
