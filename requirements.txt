@@ -1,3 +1,6 @@
 torch
-imageio
+imageio[ffmpeg]
 pyyaml
+tqdm
+matplotlib
+numpy==1.26.4
