@@ -1,0 +1,23 @@
+# differential should starts with d
+system:
+  dx1 : "x2"
+  dx2 : "torch.sin(x1) + u"
+
+# currently still manually calculated
+control:
+  u : "-lamda_ * x2 - torch.sin(x1) - k_ * torch.arctan(k_ * x1 + x2)"
+
+# for stabilizing, xn = 0
+desired:
+  x1 : "0.0"
+  x2 : "0.0"
+
+# initial value
+initial:
+  x1 : 1.2
+  x2 : 0.4
+
+# parameters
+params:
+  - lamda_
+  - k_
