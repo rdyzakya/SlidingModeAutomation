@@ -82,7 +82,7 @@ class Visualizer:
 
         X, Y, Z = self.loss_landscape(num_points)
 
-        if (X, Y, Z) == (None, None, None):
+        if X is None or Y is None or Z is None:
             return
         
         # Without tracking point
